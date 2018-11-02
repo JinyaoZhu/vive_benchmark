@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+
+  <node name="vive_benchmark" pkg="vive_benchmark" type="vive_benchmark" output="screen">
+    <remap from="/vive_odom" to="/vive/LHR_08DDEDC9_odom" />
+    <remap from="/vins_odom" to="/vins_estimator/imu_propagate" />
+  </node>
+
+</launch>
+
